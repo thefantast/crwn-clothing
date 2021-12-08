@@ -1,3 +1,5 @@
+import { UserActionTypes } from './user.types';
+
 const INITIAL_STATE = {
 
     currentUser: null
@@ -6,7 +8,8 @@ const INITIAL_STATE = {
 // when state is not defined it will get the information from INITAL_State
 const userReducer = (state = INITIAL_STATE, action) => {
     switch(action.type) {
-        case 'SET_CURRENT_USER':
+        //imported from UserActionType
+        case UserActionTypes.SET_CURRENT_USER:
             // return a new Object {} = a sign for a new Object
             return {
                 ...state,

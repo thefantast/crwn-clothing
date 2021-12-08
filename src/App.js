@@ -62,13 +62,17 @@ class App extends React.Component {
       <Routes>
         <Route exact path='/' element={<HomePage />} />
         <Route path='/shop' element={<ShopPage />} />
-        <Route path='/signin' element={<SignInAndSignUp />} />
+        <Route path='/signin' element={<SignInAndSignUp />}/>
 
       </Routes>
     </div>
   );
 }
 };
+
+const mapStateToProps = ({ user }) => ({
+  currentUser: user.currentUser
+})
 
 //function that gets the dispatch property
 
@@ -77,6 +81,7 @@ const mapDispatchToProps = dispatch => ({
 })
 
 export default  connect(
-  null,
+  //Have to look what that is!!!!
+  mapStateToProps,
   mapDispatchToProps
   )(App);
