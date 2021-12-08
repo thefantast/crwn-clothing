@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { connect } from 'react-redux';
 
 import { auth } from '../../firebase/firebase.utils';
 
@@ -30,9 +31,20 @@ const Header = ({currentUser}) => (
                     <Link className='option' to='/signin'>SIGN IN</Link>
                     )
                 }
+                
 
         </div>
     </div>
 );
 
-export default Header;
+
+//this naming of the function can be anything but mapStateToProps is standart in redux
+// get the currentUser from the reducer UserReducer - state is the connection to
+//the reducer. user get in the user array and currentUser get the actual user
+const mapStateToProps = state => ({
+
+currentUser: state.user.currentUser
+
+})
+
+export default connect(mapStateToProps)(Header);
