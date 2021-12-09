@@ -1,3 +1,6 @@
+
+// write a function. cartItems are the existing cartItems array, second cartItemToAdd is the array to add.
+
 export const addItemToCart = (cartItems, cartItemToAdd) => {
     const existingCartItem = cartItems.find(
         cartItem => cartItem.id === cartItemToAdd.id
