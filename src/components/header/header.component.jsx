@@ -1,10 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
+import { createStructuredSelector} from 'reselect';
 
 import { auth } from '../../firebase/firebase.utils';
 import CartIcon from '../cart-icon/cart-icon.component';
 import CartDropdown from '../cart-dropdown/cart-dropdown.component';
+import { selectCartHidden } from '../../redux/cart/cart.selectors.js';
+import { selectCurrentUser } from '../../redux/user/user.selectors.js';
 
 
 import { ReactComponent as Logo } from '../../assets/crown.svg';
@@ -47,10 +50,12 @@ const Header = ({currentUser, hidden}) => (
 //this naming of the function can be anything but mapStateToProps is standart in redux
 // get the currentUser from the reducer UserReducer - state is the connection to
 //the reducer. user get in the user array and currentUser get the actual user
-const mapStateToProps = ({user: { currentUser }, cart: { hidden }}) => ({
 
-currentUser,
-hidden
+// allows us to access the state
+const mapStateToProps = (state) => createStructuredSelector({
+
+currentUser: selectCurrentUser,
+hidden: selectCartHidden
 
 })
 
