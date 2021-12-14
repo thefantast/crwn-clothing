@@ -1,14 +1,14 @@
 import { createStore, applyMiddleware } from 'redux';
-
+import { persistStore } from 'redux-persist';
 import logger from 'redux-logger';
 
-import rootReducer from './root-reducer.js';
+import rootReducer from './root-reducer';
 
-//put logger the function from redux logger in a array (dynamic)
 const middlewares = [logger];
 
-// we do this that is more scalable. Pot the logger function in applyMiddleware
-const store = createStore(rootReducer, applyMiddleware(...middlewares))
+export const store = createStore(rootReducer, applyMiddleware(...middlewares));
 
-export default store;
+export const persistor = persistStore(store);
+
+export default { store, persistStore };
 
