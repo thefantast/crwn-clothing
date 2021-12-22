@@ -4,6 +4,7 @@ import { createStructuredSelector } from 'reselect';
 
 import CheckoutItem from '../../components/checkout-item/ckeckout-item.component';
 import StripeCheckoutButton from '../../components/stripe-button/stripe-button.component';
+import Header from '../../components/header/header.component';
 
 import {
   selectCartItems,
@@ -13,7 +14,10 @@ import {
 import './checkout.styles.scss';
 
 const CheckoutPage = ({ cartItems, total }) => (
+  <div className="checkout-holepage">
+  <Header />
   <div className='checkout-page'>
+  
     <div className='checkout-header'>
       <div className='header-block'>
         <span>Product</span>
@@ -41,6 +45,7 @@ const CheckoutPage = ({ cartItems, total }) => (
     4242 4242 4242 4242 - Exp: 01/20 - CVV:123
     </div>
     <StripeCheckoutButton price={total} />
+  </div>
   </div>
 );
 

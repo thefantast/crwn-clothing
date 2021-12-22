@@ -1,6 +1,71 @@
+@font-face {
+    font-family: 'Fuji-Regular';
+    src: url('./fonts/Fuji/Fuji-Regular.ttf') format('truetype');
+    src: url('./fonts/Fuji/Fuji-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Fuji-Bold';
+    src: url('./fonts/Fuji/Fuji-Bold.ttf') format('truetype');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Fuji-Light';
+    src: url('./fonts/Fuji/Fuji-Light.ttf') format('truetype');
+    font-weight: light;
+}
+
+
+@font-face {
+    font-family: 'Migra';
+    src: url('./fonts/Migra/Migra-Regular.ttf') format('truetype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'MigraItalic';
+    src: url('./fonts/Migra/MigraItalic-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'MigraExtraLight';
+    src: url('./fonts/Migra/Migra-Extralight.ttf') format('truetype');
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: 'MigraExtraLightItalic';
+    src: url('./fonts/Migra/MigraItalic-ExtralightItalic.ttf') format('truetype');
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: 'MigraExtraBold';
+    src: url('./fonts/Migra/Migra-Extrabold.ttf') format('truetype');
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: 'MigraExtraBoldItalic';
+    src: url('./fonts/Migra/MigraItalic-ExtraboldItalic.ttf') format('truetype');
+    font-weight: 100;
+}
+
+
+
+
+
+
+
+
+
 body {
-    font-family: 'Open Sans Condensed';
-    padding: 20px 60px;
+    font-family: 'Fuji';
+    
+    background-color: #1b1b1b;
 
 }
 
@@ -11,4 +76,6 @@ a {
 
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
