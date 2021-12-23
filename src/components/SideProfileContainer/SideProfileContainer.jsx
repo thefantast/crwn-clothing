@@ -142,7 +142,7 @@ export const OneButton = styled.div`
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 28px;
+    height: 35px;
     background-color: #A65EC6;
     margin: 4px;
     border-radius: 20px;
@@ -150,11 +150,13 @@ export const OneButton = styled.div`
     .MuiSvgIcon-root {
         width: 20px;
         height: 25px;
+        color: #fff;
     }
 
     > span {
         margin: 4px;
         letter-spacing: 0.10em;
+        color: #fff;
     }
 
 `;
@@ -236,6 +238,7 @@ export const AboutDiv = styled.div`
             font-size: 15px;
             margin-top: 5px;
             margin-bottom: 5px;
+            
         }
 `;
 

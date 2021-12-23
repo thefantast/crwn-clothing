@@ -23,6 +23,8 @@ export const HeaderContainer = styled.div`
     height: 300px;
     background-image: url(${HeadPicture});
     background-position: 50% 25%;
+    background-size: cover;
+    background-repeat: no-repeat;
 
     > h1 {
         font-family: Fuji-Regular;

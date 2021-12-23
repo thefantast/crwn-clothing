@@ -101,7 +101,8 @@ export const PictureContainer = styled.div`
         background-Image: url(${ArtImage});
         background-position: center;
         background-size: contain;
-        background-color: transparent;
+        background-color: #E2E3E7;
+        background-repeat: no-repeat;
 
 `;
 
