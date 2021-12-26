@@ -33,9 +33,8 @@ export const HeaderContainer = styled.div`
         font-size: 70px;
         color: #fff;
         margin-top: 30px;
-
     }
-    
+        
 
 `;
 
