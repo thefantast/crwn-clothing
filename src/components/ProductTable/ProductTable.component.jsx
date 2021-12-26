@@ -20,7 +20,7 @@ function ProductTable() {
                     <td> <Edition>#1500 / 4936</Edition></td>
                     <td><OwnedBy>exist</OwnedBy></td>
                     <td>$450.00</td>
-                    <td>03.23.2021</td>
+                    <td><DateTable>03.23.2021</DateTable></td>
                     <td>$630.00</td>
                     <td>Buy Now</td>
                   
@@ -29,9 +29,9 @@ function ProductTable() {
 
                 <tr>
                     <td><Edition>#1500 / 4936 </Edition> </td>
-                    <td>exist</td>
+                    <td><OwnedBy>exist</OwnedBy></td>
                     <td>$450.00</td>
-                    <td>03.23.2021</td>
+                    <td><DateTable>03.23.2021</DateTable></td>
                     <td>$630.00</td>
                     <td>Buy Now</td>
 
@@ -39,9 +39,9 @@ function ProductTable() {
 
                 <tr>
                     <td> <Edition>#1500 / 4936 </Edition></td>
-                    <td>exist</td>
+                    <td><OwnedBy>exist</OwnedBy></td>
                     <td>$450.00</td>
-                    <td>03.23.2021</td>
+                    <td><DateTable>03.23.2021</DateTable></td>
                     <td>$630.00</td>
                     <td>Buy Now</td>
 
@@ -49,9 +49,9 @@ function ProductTable() {
 
                 <tr>
                     <td><Edition>#1500 / 4936 </Edition></td>
-                    <td>exist</td>
+                    <td><OwnedBy>exist</OwnedBy></td>
                     <td>$450.00</td>
-                    <td>03.23.2021</td>
+                    <td><DateTable>03.23.2021</DateTable></td>
                     <td>$630.00</td>
                     <td>Buy Now</td>
 
@@ -59,9 +59,9 @@ function ProductTable() {
 
                 <tr>
                     <td><Edition>#1500 / 4936</Edition></td>
-                    <td>exist</td>
+                    <td><OwnedBy>exist</OwnedBy></td>
                     <td>$450.00</td>
-                    <td>03.23.2021</td>
+                    <td><DateTable>03.23.2021</DateTable></td>
                     <td>$630.00</td>
                     <td>Buy Now</td>
 
@@ -136,6 +136,14 @@ export const Edition = styled.div`
 `;
 
 export const OwnedBy = styled.div`
-
+    font-family: Fuji;
+    font-size: 20px;
+    opacity: 0.8;
+    text-decoration: underline #fff;
 `;
 
+export const DateTable = styled.div`
+    font-size: 20px;
+    font-weight: 300;
+    opacity: 0.8;
+`;

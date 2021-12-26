@@ -10,7 +10,7 @@ function ProductPictureDescription() {
 
                <ProductDesContainer>
 
-                    <span>Created by:</span> <Link>Mojino Moto</Link>
+                    <span>Created by:</span> <Link><span>Mojino Moto</span></Link>
                     
                 </ProductDesContainer>
                 
@@ -114,6 +114,10 @@ export const Link = styled.div`
     color: #fff;
     letter-spacing: 0.05em;
     opacity: 0.7;
+
+    > span {
+        text-decoration: underline #A65EC6;
+    }
 
 
 `;
