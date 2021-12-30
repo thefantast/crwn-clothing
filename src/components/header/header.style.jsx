@@ -5,11 +5,14 @@ import { Link } from 'react-router-dom';
 
 
 export const HeaderContainer = styled.div`
-    height: 70px;
+    height: 100px;
+    min-height: 90px;
     width: 100%;
     display: flex;
     justify-content: space-between;
     margin-bottom: 25px;
+    padding-right: 80px;
+    padding-left: 150px;
 `
 
 export const LogoContainer = styled(Link)`
@@ -32,13 +35,21 @@ export const OptionLink = styled(Link)`
 padding: 10px 15px;
 cursor: pointer;
 
+
 > p {
     font-family: Migra;
     font-weight: 900;
     color: #A65EC6;
     font-size: 20px;
     letter-spacing: 0.15em;
+    &:hover {
+        color: #fff;
+        transform: translate(0%, -30%);
+        transition: 0.3s ease-out;
+    }
 }
+
+
 
 `
 

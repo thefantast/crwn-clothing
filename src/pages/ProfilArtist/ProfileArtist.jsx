@@ -11,8 +11,10 @@ function ProfileArtist() {
     return (
         <ProfileArtistContainer>
             <HeadProfile />
-                <SideProfileContainer />
-                <ProfileContainer />
+                <ProfileArtistSection>
+                    <SideProfileContainer />
+                    <ProfileContainer />
+                </ProfileArtistSection>
             <Footer />
         </ProfileArtistContainer>
     )
@@ -20,4 +22,11 @@ function ProfileArtist() {
 
 export default ProfileArtist
 
-export const ProfileArtistContainer = styled.div``;
+export const ProfileArtistContainer = styled.div`
+    
+`;
+
+export const ProfileArtistSection = styled.div`
+    display: flex;
+    flex-direction: row;
+`;

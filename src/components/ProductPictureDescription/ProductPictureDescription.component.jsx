@@ -5,7 +5,9 @@ function ProductPictureDescription() {
     return (
         <ProductPictureContainer>
             <ProductDiv>
-                <h1>The pink Island</h1>
+                <ExperienceButton>
+                    Get the experience about the Art
+                </ExperienceButton>
                 <h4>3290 Editions</h4>
 
                <ProductDesContainer>
@@ -59,9 +61,31 @@ export const ProductPictureContainer = styled.div`
     align-items: center;
     flex-direction: column;
     width: 100vw;
-    height: 600px;
+    height: 650px;
     overflow: hidden;
 
+`;
+
+export const ExperienceButton = styled.div`
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 500px;
+        height: 70px;
+        border: 2px solid #A65EC6;
+        border-radius: 20px;
+        margin-top: 15px;
+        margin-bottom: 17px;
+        
+        font-family: Fuji-Bold;
+        letter-spacing: 0.05em;
+        font-size: 22px;
+        color: #A65EC6;
+
+        -webkit-box-shadow: -3px 9px 24px 3px rgba(3,3,3,0.6); 
+        box-shadow: -3px 9px 24px 3px rgba(3,3,3,0.6);
+
+        cursor: pointer;
 `;
 
 export const ProductDiv = styled.div`
@@ -101,6 +125,7 @@ export const ProductDesContainer = styled.div`
         letter-spacing:0.13em;
         font-size: 30px;
         color: #A65EC6;
+        
 
     }
 
@@ -117,6 +142,7 @@ export const Link = styled.div`
 
     > span {
         text-decoration: underline #A65EC6;
+        
     }
 
 

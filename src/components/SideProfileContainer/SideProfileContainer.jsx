@@ -87,12 +87,15 @@ export const SideSection = styled.div`
     width: 20%;
     min-width: 300px;
     height: 1000px;
-    background-color: green;
     border-radius: 20px 20px 20px 0px;
-    background-color: #FFFFFF;
+    border: 3px solid #A65EC6;
+    background-color: transparent;
     position: relative;
     top: -100px;
     margin-left: 30px;
+
+    -webkit-box-shadow: 0px 9px 25px 11px rgba(3,3,3,0.86); 
+    box-shadow: 0px 9px 25px 11px rgba(3,3,3,0.86);
     
 `;
 
@@ -103,6 +106,7 @@ export const ProfilPictureDiv = styled.div`
     flex-direction: column;
     width: 100%;
     height: 200px;
+    color: #fff;
     
 
     .MuiSvgIcon-root {
@@ -117,6 +121,8 @@ export const LocationDiv = styled.div`
     justify-content: center;
     align-items: center;
     height: 30px;
+    color: #fff;
+    margin-bottom: 10px;
     
 
     .MuiSvgIcon-root {
@@ -168,6 +174,7 @@ export const ViewDiv = styled.div`
     flex-direction: column;
     width: 80%;
     height: 150px;
+    color: #fff;
 
 
 `;
@@ -177,6 +184,7 @@ export const ViewContainer = styled.div`
     justify-content: space-between;
     width: 100%;
     height: 30px;
+    color: #fff;
 
     > span {
         font-size: 17px;
@@ -190,6 +198,7 @@ export const SocialMediaDiv = styled.div`
     justify-content: center;
     align-items: center;
     width: 90%;
+    color: #fff;
 
     > div {
         display: flex;
@@ -208,10 +217,11 @@ export const SocialContainer = styled.div`
     justify-content: center;
     align-items: center;
     border-radius: 30px;
-    border: 1px solid #8D8D8D;
+    border: 1px solid #A65EC6;
     width: 100%;
     height:30px;
     margin: 10px;
+    
 
     > span {
         margin-left: 5px;
@@ -225,6 +235,14 @@ export const CarrerPathDiv = styled.div`
         align-items: start;
         flex-direction: column;
         width: 85%;
+        color: #fff;
+
+        > h5{
+            font-size: 17px;
+            color: #A65EC6;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
 `;
 
 export const AboutDiv = styled.div`
@@ -233,11 +251,13 @@ export const AboutDiv = styled.div`
         align-items: start;
         flex-direction: column;
         width: 85%;
+        color: #fff;
 
         > h5 {
-            font-size: 15px;
-            margin-top: 5px;
-            margin-bottom: 5px;
+            font-size: 17px;
+            color: #A65EC6;
+            margin-top: 10px;
+            margin-bottom: 10px;
             
         }
 `;

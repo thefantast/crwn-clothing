@@ -4,6 +4,8 @@ import React from 'react';
 import { Route } from 'react-router-dom';
 import { connect } from 'react-redux';
 
+import './shop.styles.scss';
+
 import {
   firestore,
   convertCollectionsSnapshotToMap
@@ -43,9 +45,15 @@ class ShopPage extends React.Component {
     const { match } = this.props;
     const { loading } = this.state;
     return (
+      <div className='wholeShopPage'>
+      <Header />
+      <div className='MarketplaceDiv'>
+      <h2>Marketplace</h2>
+
       
+      </div>
+
       <div className='shop-page'>
-        <Header />
         <Route
           exact
           path={`${match.path}`}
@@ -59,6 +67,7 @@ class ShopPage extends React.Component {
             <CollectionPageWithSpinner isLoading={loading} {...props} />
           )}
         />
+      </div>
       </div>
     );
   }

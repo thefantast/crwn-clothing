@@ -6,6 +6,8 @@ function ProductTable() {
     return (
         <MuiTable>
             <table>
+
+            <tbody>
                 <tr>
                     <th>Edition</th>
                     <th>Owned by</th>
@@ -14,7 +16,8 @@ function ProductTable() {
                     <th>List Price</th>
                     <th></th>
                 </tr>
-
+            </tbody>
+            <tbody>
                 <tr>
                     
                     <td> <Edition>#1500 / 4936</Edition></td>
@@ -22,51 +25,52 @@ function ProductTable() {
                     <td>$450.00</td>
                     <td><DateTable>03.23.2021</DateTable></td>
                     <td>$630.00</td>
-                    <td>Buy Now</td>
-                  
-
+                    <td><Button>Buy Now</Button></td>
                 </tr>
-
+            </tbody>
+            <tbody>
                 <tr>
                     <td><Edition>#1500 / 4936 </Edition> </td>
                     <td><OwnedBy>exist</OwnedBy></td>
                     <td>$450.00</td>
                     <td><DateTable>03.23.2021</DateTable></td>
                     <td>$630.00</td>
-                    <td>Buy Now</td>
+                    <td><Button>Buy Now</Button></td>
 
                 </tr>
-
+            </tbody>
+            <tbody>
                 <tr>
                     <td> <Edition>#1500 / 4936 </Edition></td>
                     <td><OwnedBy>exist</OwnedBy></td>
                     <td>$450.00</td>
                     <td><DateTable>03.23.2021</DateTable></td>
                     <td>$630.00</td>
-                    <td>Buy Now</td>
+                    <td><Button>Buy Now</Button></td>
 
                 </tr>
-
+            </tbody>
+            <tbody>
                 <tr>
                     <td><Edition>#1500 / 4936 </Edition></td>
                     <td><OwnedBy>exist</OwnedBy></td>
                     <td>$450.00</td>
                     <td><DateTable>03.23.2021</DateTable></td>
                     <td>$630.00</td>
-                    <td>Buy Now</td>
-
+                    <td><Button>Buy Now</Button></td>
                 </tr>
-
+            </tbody>
+            <tbody>
                 <tr>
                     <td><Edition>#1500 / 4936</Edition></td>
                     <td><OwnedBy>exist</OwnedBy></td>
                     <td>$450.00</td>
                     <td><DateTable>03.23.2021</DateTable></td>
                     <td>$630.00</td>
-                    <td>Buy Now</td>
+                    <td><Button>Buy Now</Button></td>
 
                 </tr>
-
+            </tbody>
 
             </table>
         </MuiTable>
@@ -146,4 +150,18 @@ export const DateTable = styled.div`
     font-size: 20px;
     font-weight: 300;
     opacity: 0.8;
+`;
+
+export const Button = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Fuji-Bold;
+    font-size: 17px;
+    color: #1b1b1b;
+    width: 100%;
+    height: 30px;
+    background-color: purple;
+    border-radius: 20px;
+
 `;
