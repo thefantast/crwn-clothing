@@ -1,7 +1,6 @@
 import React from 'react'
 import styled from 'styled-components';
 
-import Background1 from '../../assets/Background/simon-lee-hbFKxsIqclc-unsplash.jpg'
 
 const ProfileArtistItem = ({ title, title2, edition, imageUrl}) => {
     

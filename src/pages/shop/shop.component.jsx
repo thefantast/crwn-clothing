@@ -13,7 +13,6 @@ import {
 
 import { updateCollections } from '../../redux/shop/shop.actions';
 
-import Header from '../../components/header/header.component';
 import ShopHeader from '../../container/ShopHeader/ShopHeader.component';
 
 import WithSpinner from '../../components/with-spinner/with-spinner.component';
