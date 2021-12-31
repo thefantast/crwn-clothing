@@ -3,15 +3,15 @@ import styled from 'styled-components';
 
 import Background1 from '../../assets/Background/simon-lee-hbFKxsIqclc-unsplash.jpg'
 
-const ProfileArtistItem = () => {
+const ProfileArtistItem = ({ title, title2, edition, imageUrl}) => {
     
     return (
         <ProfileArtistItemDiv>
-            <ProfileArtistItemPicture/>
+            <ProfileArtistItemPicture style={{backgroundImage: `url(${imageUrl})` }}/>
             <ProfileArtistItemData>
-                <h6>Cayan Machana</h6>
-                <h4>Flash Hand</h4>
-                <span>1 Edition</span>
+                <h6>{title}</h6>
+                <h4>{title2}</h4>
+                <span>{edition}</span>
             </ProfileArtistItemData>
         </ProfileArtistItemDiv>
     )
@@ -43,7 +43,7 @@ export const ProfileArtistItemPicture = styled.div`
     width: 320px;
     height: 300px;
 
-        background-Image: url(${Background1});
+        
         background-position: center;
         background-size: 320px 300px;
         background-repeat: no-repeat;

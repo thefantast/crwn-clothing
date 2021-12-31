@@ -61,6 +61,11 @@
       opacity: 0.9;
       position: absolute;
       border-radius: 10px;
+
+      &:hover {
+        background-color: transparent;
+        transition: 500ms;
+      }
     
   
       .title {

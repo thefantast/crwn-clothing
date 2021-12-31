@@ -14,6 +14,7 @@ import {
 import { updateCollections } from '../../redux/shop/shop.actions';
 
 import Header from '../../components/header/header.component';
+import ShopHeader from '../../container/ShopHeader/ShopHeader.component';
 
 import WithSpinner from '../../components/with-spinner/with-spinner.component';
 
@@ -46,9 +47,9 @@ class ShopPage extends React.Component {
     const { loading } = this.state;
     return (
       <div className='wholeShopPage'>
-      <Header />
+      <ShopHeader />
+      
       <div className='MarketplaceDiv'>
-      <h2>Marketplace</h2>
 
       
       </div>

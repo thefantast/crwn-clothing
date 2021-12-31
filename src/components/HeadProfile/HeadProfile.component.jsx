@@ -8,7 +8,7 @@ function HeadProfile() {
     return (
         <HeaderContainer>
             <Header />
-            <h1>Test</h1>
+            <h1>Mo</h1>
         </HeaderContainer>
     )
 }

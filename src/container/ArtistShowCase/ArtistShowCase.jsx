@@ -104,5 +104,8 @@ export const PictureContainer = styled.div`
         background-color: #E2E3E7;
         background-repeat: no-repeat;
 
+        -webkit-box-shadow: 0px 16px 27px 7px rgba(3,3,3,0.83); 
+        box-shadow: 0px 16px 27px 7px rgba(3,3,3,0.83);
+
 `;
 

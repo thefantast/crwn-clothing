@@ -80,8 +80,8 @@ export const ContainerDiv = styled.div`
 
 > h2 {
     font-size: 70px;
-    font-family: MigraExtraBold;
-    color: white;
+    font-family: MigraExtraBoldItalic;
+    color: #A65EC6;
     letter-spacing: 0.2em;
     line-height: 100%;
     margin-bottom: 30px;  
