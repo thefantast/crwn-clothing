@@ -90,7 +90,8 @@ export const MuiTable = styled.div`
     
 
      > table, td, th {
-        border: 1px solid #A65EC6;
+        border: 1px solid #606060;
+        
      }
 
      > table tr th {
@@ -111,7 +112,7 @@ export const MuiTable = styled.div`
          border-radius: 20px;
          width: 100%;
 
-         border-collapse: collapse;
+        border-collapse: collapse;
         border-radius: 10px;
         border-style: hidden; /* hide standard table (collapsed) border */
         

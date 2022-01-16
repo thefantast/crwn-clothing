@@ -1,10 +1,13 @@
 import React from 'react'
 import styled from 'styled-components'
 
+import PopUpArtist from '../PopUpArtist/PopUpArtist.component';
+
 function ProductPictureDescription() {
     return (
         <ProductPictureContainer>
             <ProductDiv>
+                <PopUpArtist />
                 <ExperienceButton>
                     Get the experience about the Art
                 </ExperienceButton>
@@ -72,7 +75,7 @@ export const ExperienceButton = styled.div`
         align-items: center;
         width: 500px;
         height: 70px;
-        border: 2px solid #A65EC6;
+        border: 2px solid transparent;
         border-radius: 20px;
         margin-top: 15px;
         margin-bottom: 17px;
@@ -80,12 +83,20 @@ export const ExperienceButton = styled.div`
         font-family: Fuji-Bold;
         letter-spacing: 0.05em;
         font-size: 22px;
-        color: #A65EC6;
+        color: #fff;
 
         -webkit-box-shadow: -3px 9px 24px 3px rgba(3,3,3,0.6); 
         box-shadow: -3px 9px 24px 3px rgba(3,3,3,0.6);
 
         cursor: pointer;
+
+        transition: all 0.5s ease-in-out;
+
+        :hover {
+            background-color: #DEDEDE;
+            color: #000;
+
+        }
 `;
 
 export const ProductDiv = styled.div`
@@ -105,9 +116,7 @@ export const ProductDiv = styled.div`
     >h4 {
         color:#fff;
     }
-    
-
-        
+           
 
 `;
 
@@ -129,9 +138,6 @@ export const ProductDesContainer = styled.div`
 
     }
 
-    
-
-
 `;
 
 export const Link = styled.div`
@@ -151,9 +157,7 @@ export const Link = styled.div`
 export const DescriptionButton = styled.div`
     display: flex;
     flex-direction: row;
-    color: #fff;
-    
-    
+    color: #fff;   
 
 `;
 
@@ -165,11 +169,28 @@ export const Button = styled.div`
     height: 50px;
     margin: 10px;
     border-radius: 20px;
-    border: 2px solid #A65EC6;
+    border: 2px solid transparent;
+    cursor: pointer;
+
+    margin-bottom: 40px;
 
     font-family: MigraExtraBold;
     font-size: 20px;
     letter-spacing: 0.1em;
 
+    -webkit-box-shadow: 1px 10px 33px -4px rgba(0,0,0,0.89); 
+    box-shadow: 1px 10px 33px -4px rgba(0,0,0,0.89);
+
+    transition: all 0.5s ease-in-out;
+    
+
+    :hover {
+        border: 2px solid #A65EC6;
+        background: #FFFF;
+        color: #000;
+    }
+
 `;
+
+ 
 

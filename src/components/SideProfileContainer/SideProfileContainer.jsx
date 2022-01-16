@@ -88,7 +88,7 @@ export const SideSection = styled.div`
     min-width: 300px;
     height: 1000px;
     border-radius: 20px 20px 20px 0px;
-    border: 3px solid #A65EC6;
+    
     background-color: transparent;
     position: relative;
     top: -100px;

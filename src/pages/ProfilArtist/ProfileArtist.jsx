@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import HeadProfile from '../../components/HeadProfile/HeadProfile.component';
 import SideProfileContainer from '../../components/SideProfileContainer/SideProfileContainer';
 import ProfileContainer from '../../components/ProfileContainer/ProfileContainer.component';
-import PopUpArtist from '../../components/PopUpArtist/PopUpArtist.component';
+
 
 import Footer from '../../components/footer/footer.component';
 
@@ -17,7 +17,7 @@ function ProfileArtist() {
                     <ProfileContainer />
                 </ProfileArtistSection>
 
-                <PopUpArtist />
+                
 
             <Footer />
         </ProfileArtistContainer>

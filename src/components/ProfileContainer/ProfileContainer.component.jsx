@@ -42,7 +42,8 @@ class ProfileContainer extends React.Component {
     }
     render () {
         return(
-            <ProfilContainer>
+        <ProfileDiv>
+            <ProfilGrid>
 
                 {
                     this.state.sections.map(({title, title2, edition, imageUrl, id}) => (
@@ -50,24 +51,33 @@ class ProfileContainer extends React.Component {
                     ))
                 }
                 
-            </ProfilContainer>
+            </ProfilGrid>
+        </ProfileDiv>
         )
     }
 }
 
 export default ProfileContainer
 
-export const ProfilContainer = styled.div`
-    display: grid;
-    grid-template: 325px / auto auto auto;
-    grid-row-gap: 100px;
-    grid-column-gap: 10px;
-    width: 70vw;
+export const ProfileDiv = styled.div`
+    width: 75vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+`;
+
+export const ProfilGrid = styled.div`
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+
     height: 1000px;
     margin-left: 40px;
     margin-top: 30px;
-
-    
 
 `;
 

@@ -1,6 +1,8 @@
 import React from 'react'
 import styled from 'styled-components';
 
+import PopUpArtist from '../PopUpArtist/PopUpArtist.component'
+
 
 const ProfileArtistItem = ({ title, title2, edition, imageUrl}) => {
     
@@ -11,6 +13,7 @@ const ProfileArtistItem = ({ title, title2, edition, imageUrl}) => {
                 <h6>{title}</h6>
                 <h4>{title2}</h4>
                 <span>{edition}</span>
+                <PopUpArtistContainer><PopUpArtist /></PopUpArtistContainer>
             </ProfileArtistItemData>
         </ProfileArtistItemDiv>
     )
@@ -22,16 +25,16 @@ export const ProfileArtistItemDiv = styled.div`
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: flex-start;
-        width: 325px;
-        height: 400px;
-        
-        
+        align-items: center;
+        width: 335px;
+        height: 470px;
+        border: 3px solid transparent;
         border-radius: 10px;
+        
         
         :hover {
             border: 3px solid #A65EC6;
-            transition: 600ms;
+            transition: 1900ms;
         }
     
 
@@ -46,20 +49,27 @@ export const ProfileArtistItemPicture = styled.div`
         background-position: center;
         background-size: 320px 300px;
         background-repeat: no-repeat;
-        border-radius: 27px;
+        border-radius: 10px;
 
 
 
 `;
 
 export const ProfileArtistItemData = styled.div`
-        margin-left: 10px;
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    margin-left: 10px;
+    
+        
 
     > h6 {
         font-family: Fuji-Light;
-        font-size: 15px;
-        letter-spacing: 0.1em;
-        color: #A65EC6;
+        font-size: 17px;
+        letter-spacing: 0.15em;
+        color: #fff;
         opacity: 0.7;
         margin-top: 5px;
     }
@@ -68,19 +78,25 @@ export const ProfileArtistItemData = styled.div`
         color: #fff;
         font-size: 20px;
         letter-spacing: 0.1em;
-
         margin-top: 5px;
         margin-bottom: 3px;
 
     }
 
     > span {
-        font-family: MigraExtraBold;
-        letter-spacing: 0.07em;
+        font-family: Fuji-Bold;
+        letter-spacing: 0.1em;
         opacity: 0.7;
         color: #fff;
         font-size: 15px;
+        line-height: 1.7em;
 
     }
 
+`;
+
+export const PopUpArtistContainer = styled.div`
+        display: flex;
+        justify-content: flex-start;
+        margin-top: 15px;
 `;

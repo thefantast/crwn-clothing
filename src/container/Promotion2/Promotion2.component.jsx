@@ -50,6 +50,7 @@ export const ContainerHand = styled.div`
         background-position: center;
         background-size: contain;
         background-repeat: no-repeat;
+        
 
         > h1 {
             font-family: Fuji-Light;
@@ -59,6 +60,7 @@ export const ContainerHand = styled.div`
             letter-spacing:0.25em;
             padding: 50px;
             line-height: 40%;
+            
             
 
         }

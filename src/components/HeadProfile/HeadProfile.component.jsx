@@ -8,7 +8,7 @@ function HeadProfile() {
     return (
         <HeaderContainer>
             <Header />
-            <h1>Mo</h1>
+            <h1>Cayan Machana</h1>
         </HeaderContainer>
     )
 }
@@ -27,10 +27,10 @@ export const HeaderContainer = styled.div`
     background-repeat: no-repeat;
 
     > h1 {
-        font-family: Fuji-Regular;
+        font-family: MigraExtraBold;
         font-weight: 900;
         letter-spacing: 0.15em;
-        font-size: 70px;
+        font-size: 80px;
         color: #fff;
         margin-top: 30px;
     }

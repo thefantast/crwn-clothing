@@ -109,14 +109,13 @@ export const GridItem = styled.div`
     width: 350px;
     height: 150px;
     border-radius: 25px;
-    border: 1px solid #A65EC6;
     margin: 20px;
     font-size: 30px;
     text-align: center;
     color: #fff;
 
-    -webkit-box-shadow: -3px 9px 24px 3px rgba(3,3,3,0.6); 
-    box-shadow: -3px 9px 24px 3px rgba(3,3,3,0.6);
+    -webkit-box-shadow: 7px 15px 37px 5px rgba(0,0,0,0.96); 
+box-shadow: 7px 15px 37px 5px rgba(0,0,0,0.96);
 
     > h4 {
         font-family: Migra;
@@ -126,6 +125,7 @@ export const GridItem = styled.div`
         padding-left: 30px;
         padding-right: 30px;
         text-align: left;
+        color: #A65EC6;
     }
 
 `;
