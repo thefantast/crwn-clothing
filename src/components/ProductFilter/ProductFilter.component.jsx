@@ -57,10 +57,13 @@ export const ProductFilterContainer = styled.div`
     min-width: 250px;
     height: 400px;
     min-height: 300px;
-    border: 1px solid #A65EC6;
+    border: 1px solid transparent;
 
-    border-radius: 30px;
+    border-radius: 7px;
     margin-right: 40px;
+
+    -webkit-box-shadow: 6px 6px 35px 2px #000000; 
+    box-shadow: 6px 6px 35px 2px #000000;
 
 
 `;

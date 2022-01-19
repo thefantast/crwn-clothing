@@ -8,9 +8,7 @@ function ProductPictureDescription() {
         <ProductPictureContainer>
             <ProductDiv>
                 <PopUpArtist />
-                <ExperienceButton>
-                    Get the experience about the Art
-                </ExperienceButton>
+                
                 <h4>3290 Editions</h4>
 
                <ProductDesContainer>
@@ -67,6 +65,8 @@ export const ProductPictureContainer = styled.div`
     height: 650px;
     overflow: hidden;
 
+    
+
 `;
 
 export const ExperienceButton = styled.div`
@@ -115,6 +115,7 @@ export const ProductDiv = styled.div`
 
     >h4 {
         color:#fff;
+        margin-top: 20px;
     }
            
 
@@ -141,9 +142,10 @@ export const ProductDesContainer = styled.div`
 `;
 
 export const Link = styled.div`
-    font-size: 34px;
+    font-family: Fuji-Light;
+    font-size: 30px;
     color: #fff;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.08em;
     opacity: 0.7;
 
     > span {

@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 import Header from '../header/header.component';
 
-import ProductImg from '../../assets/ProductPictures/mo-nm8b-BUnzuk-unsplash.jpg';
+import ProductImg from '../../assets/Background/joshua-coleman-2.jpg';
 
 function ProductPageHeader() {
     return (
@@ -80,6 +80,8 @@ export const Picture = styled.div`
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
+
+    
 
 `
 
