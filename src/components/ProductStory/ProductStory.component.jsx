@@ -12,16 +12,18 @@ function ProductStory() {
     <ProductStorySection>
         
         <EditionContainer>
-            <EditionContainerTitle>
-                <h6>Edition#</h6>
-                <h6>Editions</h6>
-                <h6>Available</h6>
-            </EditionContainerTitle>
-            <EditionContainerContent>
-                <span>#336650</span>
+            <EditionContainerHash>
+                <h6>EDITION#</h6>
+                <span>336650</span>
+            </EditionContainerHash>
+            <EditionContainerEdition>
+                <h6>EDITIONS</h6>
                 <span>1 of 1</span>
+            </EditionContainerEdition>
+            <EditionContainerAvailable>
+                <h6>AVAILABLE</h6>
                 <span>0</span>
-            </EditionContainerContent>
+            </EditionContainerAvailable>
         </EditionContainer>
 
         <ProductStoryContainer>
@@ -32,9 +34,7 @@ function ProductStory() {
 
             <h6> The story about the picture.</h6>
 
-            <TheLine />
-
-            
+            <TheLine />    
 
             <p>
                 The Mudjadji presents a confusing
@@ -82,8 +82,6 @@ function ProductStory() {
 
     </ProductStorySection>
 
-    
-
     )
 }
 
@@ -104,15 +102,84 @@ export const ProductStorySection = styled.div`
 export const EditionContainer = styled.div`
     width: 80vw;
     height: 100px;
-    background-color: purple;
-`;
-
-export const EditionContainerTitle = styled.div`
-
-`;
-
-export const EditionContainerContent = styled.div`
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
     
+`;
+
+export const EditionContainerHash = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+    padding-right: 20px;
+    font-size: 20px;
+
+    > h6 {
+    font-family: Fuji-Light;
+    font-size: 20px;
+    
+    letter-spacing: 0.1em;
+    line-height: 1.7em;
+    margin-bottom: 5px;
+    }
+
+
+`;
+
+export const EditionContainerEdition = styled.div`
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    padding-right: 20px;
+    font-size: 20px;
+
+    > h6 {
+    font-family: Fuji-Light;
+    font-size: 20px;
+    padding-right: 10px;
+    letter-spacing: 0.1em;
+    line-height: 1.7em;
+    margin-bottom: 5px;
+
+    }
+    
+    > span {
+        color: #fff;
+        padding-right: 10px;
+        font-size: 20px; 
+    }
+`;
+
+export const EditionContainerAvailable = styled.div`
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    padding-right: 20px;
+    font-size: 20px;
+
+    > h6 {
+    font-family: Fuji-Light;
+    font-size: 20px;
+    padding-right: 10px;
+    letter-spacing: 0.1em;
+    line-height: 1.7em;
+    margin-bottom: 5px;
+
+    }
+    
+    > span {
+        color: #fff;
+        padding-right: 10px;
+        font-size: 20px; 
+    }
 `;
 
 
@@ -202,9 +269,9 @@ export const ProductStoryTitle = styled.div`
     > h6 {
         font-family: Fuji-Light;
         font-size: 15px;
-        letter-spacing: 0.1em;
-        color: #fff;
-        opacity: 0.6;
+        letter-spacing: 0.17em;
+        color: #A65EC6;
+        opacity: 0.9;
     }
 
     > hr {
@@ -303,6 +370,7 @@ export const Experience = styled.div`
         letter-spacing: 0.1em;
         padding-top: 7px;
         padding-bottom: 8px;
+        color: #A65EC6;
     }
 
 `;

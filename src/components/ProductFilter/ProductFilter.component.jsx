@@ -164,7 +164,7 @@ export const PriceDiv = styled.div`
             margin-left: 5px;
             border-radius: 10px;
             background-color: transparent;
-            border: 1px solid #A65EC6;
+            border: 1px solid #fff;
             
 
             

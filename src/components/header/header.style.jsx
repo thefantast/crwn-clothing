@@ -39,11 +39,11 @@ cursor: pointer;
 > p {
     font-family: Migra;
     font-weight: 900;
-    color: #A65EC6;
+    color: #fff;
     font-size: 20px;
     letter-spacing: 0.15em;
     &:hover {
-        color: #fff;
+        color: #A65EC6;
         transform: translate(0%, -30%);
         transition: 0.3s ease-out;
     }

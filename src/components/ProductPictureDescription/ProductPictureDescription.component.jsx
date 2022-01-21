@@ -83,7 +83,7 @@ export const ExperienceButton = styled.div`
         
         font-family: Fuji-Bold;
         letter-spacing: 0.05em;
-        font-size: 22px;
+        font-size: 20px;
         color: #fff;
 
         -webkit-box-shadow: -3px 9px 24px 3px rgba(3,3,3,0.6); 
@@ -134,7 +134,7 @@ export const ProductDesContainer = styled.div`
     > span {
         font-family: Fuji-Light;
         letter-spacing:0.13em;
-        font-size: 30px;
+        font-size: 24px;
         color: #fff;
         
 
