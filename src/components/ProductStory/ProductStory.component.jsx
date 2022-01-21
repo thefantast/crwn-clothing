@@ -3,8 +3,27 @@ import styled from 'styled-components'
 
 import ProfileIcon from '../../assets/ProfilePicture/ProductProfile.png';
 
+import VisibilityIcon from '@mui/icons-material/Visibility';
+import ShareIcon from '@mui/icons-material/Share';
+import FavoriteIcon from '@mui/icons-material/Favorite';
+
 function ProductStory() {
     return (
+    <ProductStorySection>
+        
+        <EditionContainer>
+            <EditionContainerTitle>
+                <h6>Edition#</h6>
+                <h6>Editions</h6>
+                <h6>Available</h6>
+            </EditionContainerTitle>
+            <EditionContainerContent>
+                <span>#336650</span>
+                <span>1 of 1</span>
+                <span>0</span>
+            </EditionContainerContent>
+        </EditionContainer>
+
         <ProductStoryContainer>
            <ProductStoryTitle>
             <h4>
@@ -52,25 +71,118 @@ function ProductStory() {
                             <span>Cittier</span>
                 </Experience>
 
-
-
            </ArtistProfile>
 
 
         </ProductStoryContainer>
+
+        <ViewsandLinks>
+            <ShareIconDiv><ShareIcon /> </ShareIconDiv> <VisibilityDiv><VisibilityIcon /> <span>120</span></VisibilityDiv>  <FavoriteDiv><FavoriteIcon /> <span>23</span></FavoriteDiv>
+        </ViewsandLinks>
+
+    </ProductStorySection>
+
+    
+
     )
 }
 
 export default ProductStory
 
+export const ProductStorySection = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 1000px;
+    
+
+    background-color: #262626;
+`;
+
+export const EditionContainer = styled.div`
+    width: 80vw;
+    height: 100px;
+    background-color: purple;
+`;
+
+export const EditionContainerTitle = styled.div`
+
+`;
+
+export const EditionContainerContent = styled.div`
+    
+`;
+
+
+
 export const ProductStoryContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100vw;
+    width: 85vw;
     height: 700px;
     background-color: #101010;
+    border-radius: 10px;
 
+    -webkit-box-shadow: 6px 6px 35px 2px #000000; 
+    box-shadow: 6px 6px 35px 2px #000000;
+
+`;
+
+export const ViewsandLinks = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 50vw;
+    height: 100px;
+    color: #fff;
+    
+    
+
+    .MuiSvgIcon-root {
+        
+        color: #fff;
+    }
+`;
+
+export const ShareIconDiv = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+`;
+
+export const VisibilityDiv = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+
+    font-family: 'Fuji-Light';
+    font-size: 17px;
+
+    .MuiSvgIcon-root {
+
+        margin-right: 5px;
+        color: #fff;
+    }
+    
+`;
+
+export const FavoriteDiv = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    
+    .MuiSvgIcon-root {
+        
+        margin-right: 5px;
+        color: #fff;
+
+    }
 `;
 
 export const ProductStoryTitle = styled.div`
@@ -107,8 +219,7 @@ export const ProductStoryTitle = styled.div`
         letter-spacing: 0.1em;
         line-height: 1.4em;
         padding-right: 15px;
-        padding-top: 15px;
-        
+        padding-top: 15px;       
 
     }
 `;

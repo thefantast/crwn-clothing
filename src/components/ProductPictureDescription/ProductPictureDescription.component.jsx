@@ -6,6 +6,7 @@ import PopUpArtist from '../PopUpArtist/PopUpArtist.component';
 function ProductPictureDescription() {
     return (
         <ProductPictureContainer>
+
             <ProductDiv>
                 <PopUpArtist />
                 
@@ -134,7 +135,7 @@ export const ProductDesContainer = styled.div`
         font-family: Fuji-Light;
         letter-spacing:0.13em;
         font-size: 30px;
-        color: #A65EC6;
+        color: #fff;
         
 
     }
@@ -143,10 +144,10 @@ export const ProductDesContainer = styled.div`
 
 export const Link = styled.div`
     font-family: Fuji-Light;
-    font-size: 30px;
+    font-size: 25px;
     color: #fff;
     letter-spacing: 0.08em;
-    opacity: 0.7;
+    opacity: 0.8;
 
     > span {
         text-decoration: underline #A65EC6;
@@ -176,7 +177,7 @@ export const Button = styled.div`
 
     margin-bottom: 40px;
 
-    font-family: MigraExtraBold;
+    font-family: Fuji-Bold;
     font-size: 20px;
     letter-spacing: 0.1em;
 
@@ -187,7 +188,7 @@ export const Button = styled.div`
     
 
     :hover {
-        border: 2px solid #A65EC6;
+      
         background: #FFFF;
         color: #000;
     }
