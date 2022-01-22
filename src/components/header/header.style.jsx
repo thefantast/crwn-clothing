@@ -19,6 +19,12 @@ export const LogoContainer = styled(Link)`
     height: 100%;
     width: 70px;
     padding: 25px;
+    color: #fff;
+    font-family: MigraExtraBold;
+    letter-spacing: 0.14em;
+    font-size: 30px;
+
+    
 
 `
 
@@ -49,9 +55,7 @@ cursor: pointer;
     }
 }
 
-
-
-`
+`;
 
 
 
