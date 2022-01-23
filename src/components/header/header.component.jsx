@@ -33,14 +33,6 @@ const Header = ({currentUser, hidden}) => (
                 </OptionLink>
 
 
-
-                <OptionLink to='/shop'> 
-                <p>Verified Art</p>
-                </OptionLink>
-
-
-
-
                 <OptionLink to='/shop'> 
                 <p>Marketplace</p>
                 </OptionLink>
