@@ -21,7 +21,7 @@ const Header = ({currentUser, hidden}) => (
     <HeaderContainer>
 
         <LogoContainer to="/">
-            <p>Mundi</p>
+            <h5>Mundi</h5>
         </LogoContainer>
 
             <OptionsContainer>
