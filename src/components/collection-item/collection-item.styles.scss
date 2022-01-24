@@ -1,19 +1,24 @@
 .collection-item {
-  width: 20vw;
+  width: 21vw;
   display: flex;
   flex-direction: column;
-  height: 350px;
+  height: 500px;
   align-items: center;
   position: relative;
+
+
+  background-color: #222222;
+
+  -webkit-box-shadow: -3px 9px 24px 3px rgba(3,3,3,0.6); 
+        box-shadow: -3px 9px 24px 3px rgba(3,3,3,0.6);
   
 
   .image {
     width: 100%;
-    height: 95%;
+    height: 60%;
     background-size: cover;
     background-position: center;
     margin-bottom: 5px;
-    border-radius: 20px;
   }
 
   .custom-button {
@@ -22,6 +27,8 @@
     position: absolute;
     top: 255px;
     display: none;
+    
+    
   }
 
   &:hover {
@@ -35,20 +42,75 @@
     }
   }
 
+  .ButtonSection {
+    display: flex;
+    flex-direction: row;
+    
+    .ProductButton {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 140px;
+      height: 40px;
+      border-radius: 10px;
+      border: 1px solid #A65EC6;
+      color: #fff;
+      margin-right: 5px;
+      transition: all 0.5s;
+
+      &:hover {
+        background-color: #111;
+      }
+
+    }
+
+  }
+
   .collection-footer {
     width: 100%;
-    height: 5%;
+    height: 15%;
+    min-height: 110px;
     display: flex;
+    flex-direction: column;
+    font-family: Fuji-Light;
     justify-content: space-between;
-    font-size: 18px;
+    padding-top: 15px;
+    margin-bottom: 25px;
+    margin-left: 70px;
+    font-size: 17px;
+    letter-spacing: 0.03em;
+    color: #fff;
+
+    h3 {
+      font-family: 'Migra';
+      font-size: 17px;
+      letter-spacing: 0.12em;
+    }
+
+    span {
+      font-family: 'Fuji';
+      font-size: 24px;
+      letter-spacing: 0.1em;
+      line-height: 1.5em;
+    }
+
+    h4 {
+      display: flex;
+      flex-direction: row;
+      font-family: 'Fuji-Light';
+      font-weight: 200;
+      font-size: 20px;
+    }
 
     .name {
       width: 90%;
-      margin-bottom: 15px;
+      
     }
 
     .price {
       width: 10%;
     }
   }
+  
+
 }
