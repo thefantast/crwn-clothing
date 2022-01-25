@@ -14,7 +14,7 @@ const SHOP_DATA = [
       {
         id: 2,
         name: 'violet Head',
-        artistName: 'abhipsa-pal.jpg',
+        artistName: 'abhipsa-pal',
         imageUrl: 'images/CollectionArtImg/abhipsa-pal.jpg',
         price: 180
       },
@@ -99,7 +99,7 @@ const SHOP_DATA = [
         id: 13,
         name: 'Brain Space',
         artistName: 'fukurian',
-        imageUrl: 'images/CollectionArtImg/fukurian-design-1.jpg',
+        imageUrl: 'images/CollectionArtImg/fakurian-design-1.jpg',
         price: 1603
       },
       {
