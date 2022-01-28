@@ -7,6 +7,7 @@ import CollectionItem from '../../components/collection-item/collection-item.com
 import { selectCollection } from '../../redux/shop/shop.selectors'
 
 import Header from '../../components/header/header.component'
+import Footer from '../../components/footer/footer.component.jsx';
 
 
 import './collection.styles.scss';
@@ -24,6 +25,7 @@ const CollectionPage = ({ collection }) => {
         ))}
       </div>
     </div>
+    <Footer />
     </div>
   );
 };

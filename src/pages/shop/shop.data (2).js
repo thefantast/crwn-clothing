@@ -27,7 +27,7 @@ const SHOP_DATA = [
       },
       {
         id: 4,
-        name: 'Citiy Nights Planets',
+        name: 'City Nights Planets',
         artistName: 'cash macanaya',
         imageUrl: 'images/CollectionArtImg/cash-macanaya-10.jpg',
         price: 45000
@@ -183,7 +183,7 @@ const SHOP_DATA = [
         id: 23,
         name: 'pelikan meet me',
         artistName: 'cash macanaya',
-        imageUrl: 'images/CollectionArtImg/cash-macanaya.jpg',
+        imageUrl: 'images/CollectionArtImg/cash-macanaya-1.jpg',
         price: 25344
       },
       {
@@ -239,7 +239,7 @@ const SHOP_DATA = [
         id: 30,
         name: 'Bio Skull',
         artistName: 'micha frank',
-        imageUrl: 'images/CollectionArtImg/micha-frank.jpg',
+        imageUrl: 'images/CollectionArtImg/micha-frank-3.jpg',
         price: 3245
       },
       {

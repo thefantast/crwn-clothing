@@ -11,8 +11,6 @@ import { selectCartHidden } from '../../redux/cart/cart.selectors.js';
 import { selectCurrentUser } from '../../redux/user/user.selectors.js';
 
 
-import { ReactComponent as Logo } from '../../assets/crown.svg';
-
 import { HeaderContainer, LogoContainer, OptionsContainer, OptionLink } from './header.style';
 
 

@@ -14,8 +14,7 @@ class SignIn extends React.Component{
         this.state = {
             email: '',
             password: ''
-        }
-      
+        }  
 
     }
 
