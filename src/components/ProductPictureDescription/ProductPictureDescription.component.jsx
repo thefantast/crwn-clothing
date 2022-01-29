@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 import PopUpArtist from '../PopUpArtist/PopUpArtist.component';
+import { Link } from 'react-router-dom';
 
 function ProductPictureDescription() {
     return (
@@ -14,33 +15,33 @@ function ProductPictureDescription() {
 
                <ProductDesContainer>
 
-                    <span>Created by:</span> <Link><span>Mojino Moto</span></Link>
+                    <span>Created by:</span> <Link to='/profileArtist'> <Links><span>Mojino Moto</span></Links> </Link>
                     
                 </ProductDesContainer>
                 
                <ProductDesContainer>
 
-                    <span>Collection:</span> <Link>Iridescent Open Edition by Moto</Link>
+                    <span>Collection:</span> <Links>Iridescent Open Edition by Moto</Links>
 
                </ProductDesContainer>
                <ProductDesContainer>
 
-                    <span>Released:</span> <Link>Oktober 06, 2021</Link>
+                    <span>Released:</span> <Links>Oktober 06, 2021</Links>
 
                </ProductDesContainer>
                <ProductDesContainer>
 
-                    <span>Original listing:</span> <Link>$333.00</Link>
+                    <span>Original listing:</span> <Links>$333.00</Links>
 
                </ProductDesContainer>
                <ProductDesContainer>
 
-                    <span>Last sold:</span> <Link>$600.00</Link>
+                    <span>Last sold:</span> <Links>$600.00</Links>
 
                </ProductDesContainer>
                <ProductDesContainer>
 
-                    <span>Lowest ask:</span> <Link>$615.00</Link>
+                    <span>Lowest ask:</span> <Links>$615.00</Links>
                     
                </ProductDesContainer>
 
@@ -64,9 +65,7 @@ export const ProductPictureContainer = styled.div`
     flex-direction: column;
     width: 100vw;
     height: 650px;
-    overflow: hidden;
-
-    
+    overflow: hidden;  
 
 `;
 
@@ -122,6 +121,7 @@ export const ProductDiv = styled.div`
 
 `;
 
+
 export const ProductDesContainer = styled.div`
     display: flex;
     justify-content: space-between;
@@ -136,13 +136,11 @@ export const ProductDesContainer = styled.div`
         letter-spacing:0.13em;
         font-size: 24px;
         color: #fff;
-        
-
     }
 
 `;
 
-export const Link = styled.div`
+export const Links = styled.div`
     font-family: Fuji-Light;
     font-size: 25px;
     color: #fff;

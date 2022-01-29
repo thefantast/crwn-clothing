@@ -27,10 +27,12 @@ export const ProfileArtistItemDiv = styled.div`
         justify-content: center;
         align-items: center;
         width: 335px;
-        height: 470px;
+        height: 500px;
         border: 3px solid transparent;
-        border-radius: 10px;
+        border-radius: 3px;
         
+        -webkit-box-shadow: 0px 9px 25px 11px rgba(3,3,3,0.86); 
+        box-shadow: 0px 9px 25px 11px rgba(3,3,3,0.86);
         
         :hover {
             border: 3px solid #A65EC6;
@@ -49,7 +51,7 @@ export const ProfileArtistItemPicture = styled.div`
         background-position: center;
         background-size: 320px 300px;
         background-repeat: no-repeat;
-        border-radius: 10px;
+        border-radius: 3px;
 
 
 
@@ -63,6 +65,7 @@ export const ProfileArtistItemData = styled.div`
     align-items: space-between;
     margin-left: 10px;
     
+    
         
 
     > h6 {
@@ -71,7 +74,7 @@ export const ProfileArtistItemData = styled.div`
         letter-spacing: 0.15em;
         color: #fff;
         opacity: 0.7;
-        margin-top: 5px;
+        margin-top: 15px;
     }
 
     > h4 {
@@ -90,6 +93,7 @@ export const ProfileArtistItemData = styled.div`
         color: #fff;
         font-size: 15px;
         line-height: 1.7em;
+        margin-bottom: 10px;
 
     }
 
@@ -97,6 +101,6 @@ export const ProfileArtistItemData = styled.div`
 
 export const PopUpArtistContainer = styled.div`
         display: flex;
-        justify-content: flex-start;
+        justify-content: center;
         margin-top: 15px;
 `;

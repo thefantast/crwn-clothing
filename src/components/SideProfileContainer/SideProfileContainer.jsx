@@ -149,7 +149,8 @@ export const OneButton = styled.div`
     align-items: center;
     width: 100%;
     height: 35px;
-    background-color: #A65EC6;
+    background-color: transparent;
+    border: 1px solid #A65EC6;
     margin: 4px;
     border-radius: 20px;
 
@@ -219,8 +220,8 @@ export const SocialContainer = styled.div`
     border-radius: 30px;
     border: 1px solid #A65EC6;
     width: 100%;
-    height:30px;
-    margin: 10px;
+    height:35px;
+    margin: 5px;
     
 
     > span {
