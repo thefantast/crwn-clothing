@@ -14,7 +14,7 @@ function Header() {
             <Header2 />
             <HandTwo />
            <ContainerDiv>
-           <h1>Mundi</h1>
+           <h1>MUNDI</h1>
            <h2>THE ART GALLERY</h2>
            </ContainerDiv> 
             <video autoPlay="autoplay" loop="loop" muted>
@@ -72,7 +72,7 @@ export const ContainerDiv = styled.div`
     font-size: 70px;
     font-family: MigraExtraBold;
     color: white;
-    letter-spacing: 0.2em;
+    letter-spacing: 0.04em;
     line-height: 100%;
     margin: 10px;   
     
@@ -81,7 +81,7 @@ export const ContainerDiv = styled.div`
 > h2 {
     font-size: 70px;
     font-family: MigraExtraBoldItalic;
-    color: #A65EC6;
+    color: #cd8af9;
     letter-spacing: 0.2em;
     line-height: 100%;
     margin-bottom: 30px;  

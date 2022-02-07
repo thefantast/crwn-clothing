@@ -6,6 +6,7 @@ import ProfileIcon from '../../assets/ProfilePicture/ProductProfile.png';
 import VisibilityIcon from '@mui/icons-material/Visibility';
 import ShareIcon from '@mui/icons-material/Share';
 import FavoriteIcon from '@mui/icons-material/Favorite';
+import FiberManualRecordIcon from '@mui/icons-material/FiberManualRecord';
 
 function ProductStory() {
     return (
@@ -28,13 +29,14 @@ function ProductStory() {
 
         <ProductStoryContainer>
            <ProductStoryTitle>
-            <h4>
-                Description
-            </h4>
-
-            <h6> The story about the picture.</h6>
-
-            <TheLine />    
+            <DescriptionStoryTitle>
+                <h4>
+                    Description
+                </h4>
+                    <FiberManualRecordIcon />
+                <h6> The story about the picture.</h6>
+            </DescriptionStoryTitle>
+           
 
             <p>
                 The Mudjadji presents a confusing
@@ -50,25 +52,34 @@ function ProductStory() {
            <Separation />
 
            <ArtistProfile>
-                <h2>About the Creator</h2>
-                <ProfileIconContainer />
-                <ArtistName>Mojino Moto</ArtistName>
-                <TheLine />
+                <ArtistProfileTitelContainer>
+                    <ProfileIconContainer />
+                        <ArtistNameSection>
+                            <h2>About the Creator</h2>                   
+                            <ArtistName>Mojino Moto</ArtistName>
+                        </ArtistNameSection>
+                </ArtistProfileTitelContainer>
+                
 
                 <AboutArtist>
                         Some of the stories I’ve heard from time to time about the deep connections
                         people have had with my work are remarkable, yet I suspect that there are a thousand
                         more stories that are less dramatic, but important nonetheless.
                 </AboutArtist>
-                <TheLine />
+                
                 <Experience>
-                    <h3>Experience</h3>
-                            <span>
-                                BScS in Architecture in Arizona
-                                Artschool Manhatten.
-                            </span>
-                    <h3>Location</h3>
-                            <span>Cittier</span>
+                    <ExperienceContainer>
+                        <h3>Experience</h3>
+                                <span>
+                                    BScS in Architecture in Arizona
+                                    Artschool Manhatten.
+                                </span>
+                    </ExperienceContainer>
+                    <ExperienceContainer>
+                        <h3>Location</h3>
+                                <span>Cittier</span>
+                    </ExperienceContainer>
+                    
                 </Experience>
 
            </ArtistProfile>
@@ -109,6 +120,43 @@ export const EditionContainer = styled.div`
     
 `;
 
+export const DescriptionStoryTitle = styled.div`
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 80px;
+    margin-bottom: 15px;
+
+        > h4 {
+                font-family: Fuji;
+                letter-spacing: 0.05em;
+                font-size: 30px;
+                color: #cd8af9;
+                text-transform: uppercase;
+
+                
+            }
+
+            > h6 {
+                font-family: Fuji-Light;
+                font-size: 15px;
+                letter-spacing: 0.17em;
+                color: #fff;
+                opacity: 0.5;
+                margin-left: 10px;
+            }
+
+            .MuiSvgIcon-root {
+            width: 8px;
+            height: 8px;
+            color: #fff;
+            opacity: 0.5;
+            margin-left: 7px;
+    }
+
+`;
+
 export const EditionContainerHash = styled.div`
     display: flex;
     justify-content: center;
@@ -128,6 +176,28 @@ export const EditionContainerHash = styled.div`
     }
 
 
+`;
+
+export const ArtistProfileTitelContainer = styled.div`
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+    margin-bottom: 15px;
+`;
+
+export const ArtistNameSection = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 10px;
+    
+
+    > h2 {
+        font-family: Fuji-Light;
+        letter-spacing: 0.05em;
+        color: #cd8af9;
+    }
 `;
 
 export const EditionContainerEdition = styled.div`
@@ -258,10 +328,11 @@ export const ProductStoryTitle = styled.div`
     
     
     > h4 {
-        font-family: MigraExtraBold;
-        letter-spacing: 0.15em;
+        font-family: Fuji;
+        letter-spacing: 0.05em;
         font-size: 30px;
-        color: #fff;
+        color: #cd8af9;
+        text-transform: uppercase;
 
         margin-top: 40px;
     }
@@ -270,41 +341,33 @@ export const ProductStoryTitle = styled.div`
         font-family: Fuji-Light;
         font-size: 15px;
         letter-spacing: 0.17em;
-        color: #A65EC6;
-        opacity: 0.9;
+        color: #fff;
+        opacity: 0.6;
     }
 
     > hr {
-        color: #fff;
+        color: #EFEFEF;
         
     }
 
     > p {
         font-family: Fuji-Light;
         font-size: 20px;
-        color: #fff;
+        color: #EFEFEF;
         letter-spacing: 0.1em;
-        line-height: 1.4em;
+        line-height: 1.6em;
         padding-right: 15px;
-        padding-top: 15px;       
+        padding-top: 15px;
+        opacity: 0.8;       
 
     }
-`;
-
-export const TheLine = styled.div`
-    width: 50%;
-    height: 1px;
-    background-color: #fff;
-
-    margin-top: 4px;
-    margin-bottom: 10px;
-
 `;
 
 export const Separation = styled.div`
     width: 2px;
     height: 80%;
-    background-color: #fff;
+    background-color: #EFEFEF;
+    opacity: 0.7;
 `;
 
 export const ArtistProfile = styled.div`
@@ -319,10 +382,10 @@ export const ArtistProfile = styled.div`
     margin-top: 50px;
 
     > h2 {
-        font-family: MigraExtraBold;
+        font-family: Fuji-Light;
         font-size: 30px;
-        letter-spacing: 0.15em;
-        color: #fff;
+        letter-spacing: 0.09em;
+        color: #cd8af9;
         padding-top: 40px;
         padding-bottom: 30px;
     }
@@ -330,11 +393,11 @@ export const ArtistProfile = styled.div`
 `;
 
 export const ArtistName = styled.div`
-    font-family: Fuji-Bold;
-    font-size: 25px;
-    letter-spacing: 0.1em;
+    font-family: MigraExtraBold;
+    font-size: 35px;
+    letter-spacing: 0.05em;
     color: #fff;
-    padding-top: 20px;
+    padding-top: 5px;
 
 
 `;
@@ -342,11 +405,12 @@ export const ArtistName = styled.div`
 export const AboutArtist = styled.div`
     width: 70%;
     height: 200px;
-    color: #fff;
+    color: #EFEFEF;
     font-size: 17px;
-    padding: 10px 50px;
+    padding: 10px 20px;
     letter-spacing: 0.1em;
-    line-height: 1.3em;
+    line-height: 1.7em;
+
 
 `;
 
@@ -360,17 +424,37 @@ export const ProfileIconContainer = styled.div`
 `;
 
 export const Experience = styled.div`
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     width: 70%;
     height: 200px;
     color: #fff;
-    padding: 10px 50px;
+    padding: 10px 20px;
+    
 
     > h3 {
         font-size: 18px;
         letter-spacing: 0.1em;
         padding-top: 7px;
         padding-bottom: 8px;
-        color: #A65EC6;
+        color: #cd8af9;
+    }
+
+`;
+
+export const ExperienceContainer = styled.div`
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100px;
+    margin-right: 20px;
+    color: #EFEFEF;
+    line-height: 1.5em;
+
+    > h3 {
+        margin-bottom: 10px;
     }
 
 `;

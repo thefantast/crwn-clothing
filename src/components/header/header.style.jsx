@@ -1,7 +1,7 @@
+
+   
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
-
-
 
 
 export const HeaderContainer = styled.div`
@@ -21,11 +21,9 @@ export const LogoContainer = styled(Link)`
     padding: 25px;
     color: #fff;
     font-family: MigraExtraBold;
-    letter-spacing: 0.14em;
+    letter-spacing: 0.05em;
     font-size: 30px;
-
     
-
 `
 
 export const OptionsContainer = styled.div`
@@ -34,30 +32,25 @@ export const OptionsContainer = styled.div`
       display: flex;
       align-items: center;
       justify-content: flex-end;
-
 `
 
 export const OptionLink = styled(Link)`
 padding: 10px 15px;
 cursor: pointer;
-
-
 > p {
-    font-family: Migra;
-    font-weight: 900;
+    font-family: Fuji;
+    text-transform: uppercase;
+    font-weight: 500;
     color: #fff;
     font-size: 20px;
-    letter-spacing: 0.15em;
+    letter-spacing: 0.15em;x
     &:hover {
-        color: #A65EC6;
+        font-weight: 900;
+        color: #cd8af9;
         transform: translate(0%, -30%);
         transition: 0.3s ease-out;
     }
 }
-
 `;
-
-
-
 
 

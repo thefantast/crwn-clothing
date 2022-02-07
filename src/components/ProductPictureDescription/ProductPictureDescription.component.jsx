@@ -15,33 +15,33 @@ function ProductPictureDescription() {
 
                <ProductDesContainer>
 
-                    <span>Created by:</span> <Link to='/profileArtist'> <Links><span>Mojino Moto</span></Links> </Link>
+                    <span>Created by</span> <Link to='/profileArtist'> <Links><span>Mojino Moto</span></Links> </Link>
                     
                 </ProductDesContainer>
                 
                <ProductDesContainer>
 
-                    <span>Collection:</span> <Links>Iridescent Open Edition by Moto</Links>
+                    <span>Collection</span> <Links>Iridescent Open Edition by Moto</Links>
 
                </ProductDesContainer>
                <ProductDesContainer>
 
-                    <span>Released:</span> <Links>Oktober 06, 2021</Links>
+                    <span>Released</span> <Links>Oktober 06, 2021</Links>
 
                </ProductDesContainer>
                <ProductDesContainer>
 
-                    <span>Original listing:</span> <Links>$333.00</Links>
+                    <span>Original listing</span> <Links>$333.00</Links>
 
                </ProductDesContainer>
                <ProductDesContainer>
 
-                    <span>Last sold:</span> <Links>$600.00</Links>
+                    <span>Last sold</span> <Links>$600.00</Links>
 
                </ProductDesContainer>
                <ProductDesContainer>
 
-                    <span>Lowest ask:</span> <Links>$615.00</Links>
+                    <span>Lowest ask</span> <Links>$615.00</Links>
                     
                </ProductDesContainer>
 
@@ -132,8 +132,9 @@ export const ProductDesContainer = styled.div`
     margin-top: 25px;
 
     > span {
-        font-family: Fuji-Light;
-        letter-spacing:0.13em;
+        font-family: Fuji;
+        font-weight: 900;
+        letter-spacing:0.05em;
         font-size: 24px;
         color: #fff;
     }

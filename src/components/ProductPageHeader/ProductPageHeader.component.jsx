@@ -49,16 +49,17 @@ export const PictureTitle = styled.div`
 
     > h1 {
         font-family: MigraExtraBold;
-        font-size: 30px;
+        font-size: 55px;
         color: #fff;
-        letter-spacing: 0.12em;
+        letter-spacing: 0.05em;
     }
 
     > h4 {
         font-family: Fuji-Light;
         letter-spacing: 0.1em;
-        font-size: 20px;
-        color: #A65EC6;
+        font-size: 30px;
+        color: #CD8AF9;
+        margin-bottom: 40px;
     }
 
 `;

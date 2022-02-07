@@ -10,31 +10,31 @@ class ProfileContainer extends React.Component {
 
         this.state = {
             sections: [{
-                title: 'Mo',
+                title: 'Cayan Machana',
                 title2: 'Pool Time',
                 edition: '1 Edition',
                 imageUrl: 'images/CollectionArtImg/mo-1.jpg',
                 id: 1
             },
             {
-                title: 'Mo',
+                title: 'Cayan Machana',
                 title2: 'The Dining Table',
                 edition: '12 Edition',
                 imageUrl: 'images/CollectionArtImg/mo-2.jpg',
                 id: 2
             },
             {
-                title: 'Mo',
+                title: 'Cayan Machana',
                 title2: 'Relaxing Area in the Pink',
                 edition: '3 Edition',
-                imageUrl: 'images/CollectionArtImg/mo-3.jpg',
+                imageUrl: 'images/CollectionArtImg/cash-macanaya-2.jpg',
                 id: 3
             },
             {
-                title: 'Mo',
+                title: 'Cayan Machana',
                 title2: 'Relaxing Area in the Pink',
                 edition: '3 Edition',
-                imageUrl: 'images/CollectionArtImg/mo-4.jpg',
+                imageUrl: 'images/CollectionArtImg/cash-macanaya-6.jpg',
                 id: 4
             }
         ]

@@ -1,6 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
+import BlurOnIcon from '@mui/icons-material/BlurOn';
 
 import CheckoutItem from '../../components/checkout-item/ckeckout-item.component';
 import StripeCheckoutButton from '../../components/stripe-button/stripe-button.component';
@@ -38,7 +39,7 @@ const CheckoutPage = ({ cartItems, total }) => (
     {cartItems.map(cartItem => (
       <CheckoutItem key={cartItem.id} cartItem={cartItem} />
     ))}
-    <div className='total'>TOTAL: ${total}</div>
+    <div className='total'>TOTAL: <BlurOnIcon />{total}</div>
     <div className="test-warning">
     *Please use the following test credit card for payments*
     <br />
