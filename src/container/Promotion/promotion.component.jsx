@@ -73,7 +73,7 @@ export const ContainerText = styled.div`
         font-weight: 900;
         font-size: 170px;
         font-style: Extrabold;
-        color: #A65EC6;
+        color: #cd8af9;
         letter-spacing: 0.5em;
         align-items: center;
     }

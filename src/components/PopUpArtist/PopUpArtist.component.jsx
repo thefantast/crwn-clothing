@@ -72,7 +72,7 @@ export const ButtonVision = styled.div`
     text-align: center;
     border-radius: 8px;
     letter-spacing: 0.1em;
-    color: #A65EC6;
+    color: #cd8af9;
     transition: all 0.5s ease-in-out;
 
 

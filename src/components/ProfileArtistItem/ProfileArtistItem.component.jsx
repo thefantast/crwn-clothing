@@ -35,7 +35,7 @@ export const ProfileArtistItemDiv = styled.div`
         box-shadow: 0px 9px 25px 11px rgba(3,3,3,0.86);
         
         :hover {
-            border: 3px solid #A65EC6;
+            border: 3px solid #cd8af9;
             transition: 1900ms;
         }
     

@@ -59,7 +59,7 @@ export const ShowCaseDesription = styled.div`
                 font-family: Migra;
                 letter-spacing: 0.2em;
                 font-size: 80px;
-                color: #A65EC6;
+                color: #cd8af9;
                 line-height: 100%;
         }
         

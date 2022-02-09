@@ -14,7 +14,7 @@ export const TitleContainer = styled.h1`
   &:hover {
     color: grey;
   }
-  color: #A65EC6;
+  color: #cd8af9;
 `;
 
 export const PreviewContainer = styled.div`

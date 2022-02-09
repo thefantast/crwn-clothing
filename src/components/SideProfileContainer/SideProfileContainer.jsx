@@ -150,7 +150,7 @@ export const OneButton = styled.div`
     width: 100%;
     height: 35px;
     background-color: transparent;
-    border: 1px solid #A65EC6;
+    border: 1px solid #cd8af9;
     margin: 4px;
     border-radius: 20px;
 
@@ -218,7 +218,7 @@ export const SocialContainer = styled.div`
     justify-content: center;
     align-items: center;
     border-radius: 30px;
-    border: 1px solid #A65EC6;
+    border: 1px solid #cd8af9;
     width: 100%;
     height:35px;
     margin: 5px;
@@ -240,7 +240,7 @@ export const CarrerPathDiv = styled.div`
 
         > h5{
             font-size: 17px;
-            color: #A65EC6;
+            color: #cd8af9;
             margin-top: 10px;
             margin-bottom: 10px;
         }
@@ -256,7 +256,7 @@ export const AboutDiv = styled.div`
 
         > h5 {
             font-size: 17px;
-            color: #A65EC6;
+            color: #cd8af9;
             margin-top: 10px;
             margin-bottom: 10px;
             

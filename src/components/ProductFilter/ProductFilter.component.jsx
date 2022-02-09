@@ -103,7 +103,7 @@ export const Status = styled.div`
         font-family: MigraExtraBold;
         letter-spacing: 0.05em;
         font-size: 25px;
-        color: #A65EC6;
+        color: #cd8af9;
     }
 
 `;
@@ -115,7 +115,7 @@ export const StatusContainer = styled.div`
     cursor: pointer;
 
     > input:checked {
-        background-color: #A65EC6;
+        background-color: #cd8af9;
     }
 
     

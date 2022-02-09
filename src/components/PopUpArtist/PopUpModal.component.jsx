@@ -216,7 +216,7 @@ export const FooterToolsDiv = styled.div`
     > h5 {
           font-family: MigraExtraBold;
           font-size: 40px;
-          color: #A65EC6;
+          color: #cd8af9;
           letter-spacing: 0.2em;
 
     }
@@ -234,7 +234,7 @@ export const ButtonPop = styled.div`
     height: 40px;
     color: #fff;
     cursor: pointer;
-    border: 2px solid #A65EC6;
+    border: 2px solid #cd8af9;
     border-radius: 20px;
 
     text-align: center;
@@ -244,7 +244,7 @@ export const ButtonPop = styled.div`
 
 
     :hover {
-        background-color: #A65EC6;
+        background-color: #cd8af9;
         border-color: #fff;
         color: #000;
 
@@ -269,13 +269,13 @@ export const Headbutton = styled.div`
     height: 40px;
     color: #fff;
     cursor: pointer;
-    border: 2px solid #A65EC6;
+    border: 2px solid #cd8af9;
     border-radius: 20px;
     background-color: #000;
     transition: all 0.5s ease-in-out;
 
     :hover {
-        background-color: #A65EC6;
+        background-color: #cd8af9;
         border-color: #fff;
         color: #000;
 

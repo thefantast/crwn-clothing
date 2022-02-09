@@ -65,7 +65,7 @@ export const FilterDiv = styled.div`
     > input {
         width: 300px;
         border-radius: 7px;
-        border: 1px solid #A65EC6;
+        border: 1px solid #cd8af9;
         background-color: transparent;
         font-family: 'Fuji';
         color: #fff;

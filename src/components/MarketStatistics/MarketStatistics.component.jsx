@@ -118,14 +118,14 @@ export const GridItem = styled.div`
 box-shadow: 7px 15px 37px 5px rgba(0,0,0,0.96);
 
     > h4 {
-        font-family: Migra;
+        font-family: Fuji;
         letter-spacing: 0.1em;
         font-size: 27px;
-        opacity: 0.6;
         padding-left: 30px;
         padding-right: 30px;
         text-align: left;
-        color: #A65EC6;
+        color: #cd8af9;
+        opacity: 0.7;
     }
 
 `;

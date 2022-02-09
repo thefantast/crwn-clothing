@@ -55,7 +55,7 @@ export const ContainerHand = styled.div`
         > h1 {
             font-family: Fuji-Light;
             font-size:110px;
-            color: #A65EC6;
+            color: #cd8af9;
             text-align: start;
             letter-spacing:0.25em;
             padding: 50px;
@@ -67,7 +67,7 @@ export const ContainerHand = styled.div`
 
         > h2 {
             font-family: MigraExtraBold;
-            color: #A65EC6;
+            color: #cd8af9;
             font-size:170px;
             text-align: start;
             padding: 50px;
@@ -101,7 +101,7 @@ export const ContainerDescription = styled.div`
         font-family: MigraExtraLight;
         font-size: 18px;
         letter-spacing: 0.15em;
-        color: #A65EC6;
+        color: #cd8af9;
     }
 
     > p {

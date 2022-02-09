@@ -108,7 +108,7 @@ export const ProductDiv = styled.div`
     height: 100%;
 
     >h1 {
-        color: #A65EC6;
+        color: #cd8af9;
         margin: 10px;
 
     }
@@ -149,7 +149,7 @@ export const Links = styled.div`
     opacity: 0.8;
 
     > span {
-        text-decoration: underline #A65EC6;
+        text-decoration: underline #cd8af9;
         
     }
 

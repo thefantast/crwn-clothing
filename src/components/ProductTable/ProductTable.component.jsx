@@ -99,9 +99,9 @@ export const MuiTable = styled.div`
      }
 
      > table tr th {
-         font-family: MigraExtraBold;
-         letter-spacing: 0.1em;
-         color: #A65EC6;
+         font-family: Fuji;
+         letter-spacing: 0.04em;
+         color: #cd8af9;
      }
 
      > table tr td {
@@ -141,7 +141,7 @@ export const MuiTable = styled.div`
 export const Edition = styled.div`
     font-family: Fuji-Light;
     font-size: 20px;
-    text-decoration: underline #A65EC6;
+    text-decoration: underline #cd8af9;
     opacity: 0.7;
 `;
 
